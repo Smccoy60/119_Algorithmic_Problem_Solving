@@ -2,7 +2,7 @@
 
 Name: Sarah Imhoff
 Partners: None
-Shared repository: [https://github.com/Smccoy60/119_Algorithmic_Problem_Solving/commit/03363c7c4960580ea69dc2c63459af9eb67b388a]
+Shared repository: [https://github.com/Smccoy60/119_Algorithmic_Problem_Solving/tree/main/Week_1/02_Tuesday_Assignment]
 My contribution: Built the program
 
 ## Run
