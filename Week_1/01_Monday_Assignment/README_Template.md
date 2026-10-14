@@ -33,6 +33,9 @@ Assignment checks passed
 
 ## Work Notes and Reflections
 
+- T10 is invalid becuase a Boolean is not a recorded number of days
+- T11 is missing age_days so this ticket is invalid
+- T12 has a status of "waiting" and only open and closed appear to be valid statuses, so this ticket is invlaid. 
 - Created a validate_ticket() function to check ticket data before it is used. 
 - Learned that Boolean values such as True and False should not be accepted as valid age_days values.
 - Created a select_open_tickets() function to separate valid open tickets from invalid records.
