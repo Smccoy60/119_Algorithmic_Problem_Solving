@@ -31,7 +31,11 @@ Assignment checks passed
 
 ## Thursday Progress Notes
 
-Using named Boolean variables is a small refactor.  It improves teh organization without changing the intended policy result. 
+For Thursday, I revised the follow-up policy instead of creating a new function.  The updated policy now requires tickets to be valid, open, and at least 2 days old.  In addition, a ticket must either be high priority or belong to the access category to qualify for follow-up.
+
+I updated the existing needs_follow_up() function and refactored the logic by using descriptive Boolean variables.  This made the code easier to read and understand without changing the intended behavior of the policy. 
+
+I added the following tests to verify both qualifying paths (high priority and access category) and confirmed that the mandatory safeguards still prevent closing or too-young tickets from being selected.  I also tested one result that changed under the new policy and one result that remained the same after the revision.
 
 Added 6 more tests:
     Test 1: High-priority route - the tickets meets both mandatory rules and the high-priority alternative
@@ -39,7 +43,9 @@ Added 6 more tests:
     Test 3: Closed-ticket safeguard - even though the ticket is high priority and in the access category, neither alternative may bypass the mandatory open-status requirement.
     Test 4: Minimum-age safeguard - even though the ticket is high priority and in teh access category, neither alternative may bypass the minimum age.
     Test 5: Changed result - the ticket qualified under Tuesday's policy because it was open and old enought.  It no longer qualifies because it is neither high priority nor in the access category.  This is my intentionally changed result
-    Test 6: Preserved result - the ticket qualified under Tuesday's policy and continues to qualify under Thursday's policy because it belongs to the access category.  This is my preserved result. 
+    Test 6: Preserved result - the ticket qualified under Tuesday's policy and continues to qualify under Thursday's policy because it belongs to the access category.  This is my preserved result.
+
+One thing I learned from this assignment is that complex business rules become easier to understand when they are separated into smaller Boolean expressions with clear names.  This also makes testing and future policy changes easier. 
 
 ## Tuesday Progress Notes
 * I added test cases for tickts that were 1 day old, 2 days old, and 3 days old.  These tests helped verify that the follow-up policy was workign correctly. During testing, I discovered that exactly 2 days old should qualify, so teh age comparison needed to use '>=2'.
