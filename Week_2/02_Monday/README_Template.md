@@ -2,7 +2,7 @@
 
 Name: Sarah Imhoff
 Partners: None
-Shared repository: [URL]
+Shared repository: (https://github.com/Smccoy60/119_Algorithmic_Problem_Solving/tree/main/Week_2)
 My contribution: Implemented scan lookup, index construction, indexed lookup, Big-O analysis, testing and documentation
 
 ## Run
