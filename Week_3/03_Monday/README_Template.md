@@ -2,7 +2,7 @@
 
 Name: Sarah Imhoff
 Partners: None
-Shared repository: [URL]
+Shared repository: (https://github.com/Smccoy60/119_Algorithmic_Problem_Solving/tree/main/Week_3/03_Monday)
 My contribution: Completed the Monday registry, lookup, priority update, category filter, tests, and main program demonstration
 
 ## Run
